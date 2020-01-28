@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="./styles.css">
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Bootstrap core CSS -->
@@ -18,7 +18,7 @@
   <div class="row"> <!-- En este row empieza el hero -->
     <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"><img src="./logo50p.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="logo">ISFT 177</a>
+            <a class="navbar-brand" href="../index.html"><img src="../images/logo50p.png" width="30" height="30" class="d-inline-block align-top mr-2" alt="logo">ISFT 177</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,28 +26,28 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
-              <a class="nav-link" data-scroll href="./index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-scroll href="./inscripcion.html">Inscripción </a>
+              <a class="nav-link" data-scroll href="../index.html">Home </a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" data-scroll href="./institucion.html">Institución <span class="sr-only">(current)</span></a>
+              <a class="nav-link" data-scroll href="../routes/inscripcion.html">Inscripción <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll href="./carreras.html">Carreras</a>
+              <a class="nav-link" data-scroll href="../routes/institucion.html">Institución</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll href="./alumnos.html">Alumnos</a>
+              <a class="nav-link" data-scroll href="../routes/carreras.html">Carreras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll href="./documentos.html">Documentos</a>
+              <a class="nav-link" data-scroll href="../routes/alumnos.html">Alumnos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll href="./ubicacion.html">Ubicación</a>
+              <a class="nav-link" data-scroll href="../routes/documentos.html">Documentos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-scroll href="./contactos.html">Contactos</a>
+              <a class="nav-link" data-scroll href="./routes/ubicacion.html">Ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-scroll href="./routes/contactos.html">Contactos</a>
             </li>
             
           
@@ -57,12 +57,11 @@
         </div>
       </nav>
    
-
                 <!-- Acordate que el hero empieza arriba del nav con el .row-->
                 <div class="col nopadright">
                   <div class="jumbotron nopad">
                     <div class="row">
-                    <div class="col-12 hero"><h1 class="h2-responsive padtop h1hero">Institución</h1></div>
+                    <div class="col-12 hero"><h1 class="h2-responsive padtop h1hero">Inscripción</h1></div>
                   </div>
                   </div>
                 </div>
@@ -76,8 +75,27 @@
                 <div class="jumbotron">
                     <div class="row">
                     <div class="col-12">
-                      <h2 class="text-center">Sidebar con tarjetas y links en un container</h2>
+                  
+                      <div class="row">
+                        <div class="col-bg-2">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <li class="list-group-item list-group-item-action list-group-item-secondary" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Inscripción</li>
+                            <a class="list-group-item list-group-item-action list-group-item-warning active" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Requisitos</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Planillas de Inscripción</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Reglamento de Alumnos</a>
+                          </div>
+                        </div>
+                        <div class="col-bg-10">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                          </div>
+                        </div>
+                      </div>
 
+                      <h2 class="text-center">Sidebar con tarjetas y links en un container</h2>
                     </div>
                 </div>
                 </div>
