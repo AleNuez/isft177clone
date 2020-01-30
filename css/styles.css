@@ -67,5 +67,11 @@ body {
     color: black;
 }
 .longflex {
-    display: block !important;
+    display: flow-root !important;
+}
+.card-link {
+    color: black;
+}
+.blackish {
+    color: black;
 }
