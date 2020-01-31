@@ -28,10 +28,10 @@ body {
     color: azure;
 }
 .navbar {
-    background-color: rgba(0, 0, 0, 0.308) !important;
+    background-color: rgba(0, 0, 0, 0.692) !important;
 }
 .top-nav-collapse {
-    background-color: rgba(0, 0, 0, 0.438) !important;
+    background-color: rgba(0, 0, 0, 0.692) !important;
     
 }
 .hero {
@@ -74,4 +74,17 @@ body {
 }
 .blackish {
     color: black;
+}
+.google-maps {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
