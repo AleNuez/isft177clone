@@ -1,6 +1,12 @@
 body {
     background-color: rgba(255, 247, 172, 0.925) !important;
 }
+.nav-pills.active {
+   color: #fff !important;
+}
+.nav-pills {
+    color: #000 !important;
+}
 
 .inicio {
     margin-top: 5vh;
